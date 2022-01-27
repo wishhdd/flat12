@@ -4,6 +4,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f8f8f7;
 }
 
 code {
@@ -12,9 +13,9 @@ code {
 
 .body {
   position: absolute;
-  width: 1920px;
+  width: 1660px;
   height: 780px;
-  left: 0px;
+  left: 130px;
   top: 147px;
 }
 
@@ -22,7 +23,7 @@ code {
   position: absolute;
   width: 974px;
   height: 671px;
-  left: 491px;
+  left: 361px;
   top: 0px;
   background: #ffffff;
   border-radius: 20px;
@@ -30,7 +31,7 @@ code {
 
 .body__leftMenu {
   position: absolute;
-  left: 130px;
+  left: 0px;
   top: 0px;
   width: 330px;
   height: 634px;
@@ -38,37 +39,75 @@ code {
 
 .body__rightMenu {
   position: absolute;
-  left: 1501px;
+  left: 1371px;
   top: 0px;
   width: 289px;
 }
 
 .topPanel {
   position: absolute;
-  width: 1920px;
+  width: 1660px;
   height: 107px;
-  left: 0px;
+  left: 130px;
   top: 0px;
-}
-
-.TopPanel__UpBar {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
+}
+
+.TopPanel__UpBar {
   font-size: 12px;
   line-height: 140%;
+  padding-top: 8px;
   color: #adadab;
   display: flex;
 }
-.margin_righ30 {
+
+.TopPanel__UpBar_link {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.margin-left10px {
+  margin-left: 10px;
+}
+
+.margin-right30px {
   margin-right: 30px;
+}
+
+.TopPanel__MidBar {
+  font-size: 16px;
+  line-height: 140%;
+  color: #383636;
+  display: flex;
+  align-items: center;
+  height: 74px;
+}
+.TopPanel__MidBar_logo {
+  margin-right: 169px;
+}
+.TopPanel__MidBar_menu {
+  margin-right: 30px;
+}
+.TopPanel__MidBar_Chevron {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.TopPanel__MidBar_notification {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
 
 .bottomPanel {
   position: absolute;
   width: 1660px;
   height: 331px;
-  left: 0px;
+  left: 130px;
   top: 967px;
-  padding: 61.5px 130px 27.5px 130px;
+  padding: 61.5px 0px 27.5px 0px;
 }
