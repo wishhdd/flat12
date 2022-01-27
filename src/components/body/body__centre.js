@@ -4,9 +4,9 @@ import History from "..//..//media/Icon 16px/History.png";
 import ChevronUp from "..//..//media/Icon 16px/Chevron up.png";
 import Chevron from "..//..//media/Icon 16px/Chevron.png";
 
-export default function Centre() {
+export default function Body__Centre() {
   return (
-    <div>
+    <div className="body__centre">
       <img src={arrowBack} alt="back" /> Редактирование профиля
       <div>Основная информация</div>
       <div>
@@ -46,6 +46,7 @@ export default function Centre() {
         <img src={Chevron} alt="Chevron" />
         <hr />
       </div>
+      <button> СОХРАНИТЬ</button>
     </div>
   );
 }

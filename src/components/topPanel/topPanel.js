@@ -1,12 +1,12 @@
 import React from "react";
-import UpBar from "./upBar";
-import MidBar from "./midBar";
+import TopPanel__UpBar from "./topPanel__upBar";
+import TopPanel__MidBar from "./topPanel__midBar";
 
 export default function TopPanel() {
   return (
-    <div>
-      <UpBar />
-      <MidBar />
+    <div className="topPanel">
+      <TopPanel__UpBar />
+      <TopPanel__MidBar />
     </div>
   );
 }

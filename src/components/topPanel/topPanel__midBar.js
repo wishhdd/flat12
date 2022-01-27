@@ -5,10 +5,10 @@ import Chevron from "..//..//media/Icon 16px/Chevron.png";
 import notification from "..//..//media/Icon 24px/notification.png";
 import Ellipse85 from "..//..//media/Ellipse85.png";
 
-export default function MidBar() {
+export default function TopPanel__MidBar() {
   return (
     <div>
-      <img src={black_privatka_logo_text} alt="privatka logo and text" />
+      <img src={black_privatka_logo_text} alt="privatka logo" />
       <a>МЕРОПРИЯТИЯ</a>
       <a>СЕРВИС</a>
       <img src={Chevron} alt="down arrow" />

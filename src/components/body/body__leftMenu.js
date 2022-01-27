@@ -8,9 +8,9 @@ import list from "..//../media/Icon 24px/list.png";
 import rub from "..//../media/Icon 24px/rub.png";
 import Ellipse83 from "..//../media/Ellipse83.png";
 
-export default function RightMenu() {
+export default function Body__LeftMenu() {
   return (
-    <div>
+    <div className="body__leftMenu">
       <div>
         <img src={profile} alt="profile" />
         Профиль

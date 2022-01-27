@@ -1,14 +1,15 @@
 import React from "react";
-import LeftMenu from "./leftMenu";
-import Centre from "./centre";
-import RightMenu from "./rightMenu";
+
+import Body__RightMenu from "./body__rightMenu";
+import Body__Centre from "./body__centre";
+import Body__LeftMenu from "./body__leftMenu";
 
 export default function Body() {
   return (
-    <>
-      <LeftMenu />
-      <Centre />
-      <RightMenu />
-    </>
+    <div className="body">
+      <Body__LeftMenu />
+      <Body__Centre />
+      <Body__RightMenu />
+    </div>
   );
 }

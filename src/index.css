@@ -1,13 +1,74 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.body {
+  position: absolute;
+  width: 1920px;
+  height: 780px;
+  left: 0px;
+  top: 147px;
+}
+
+.body__centre {
+  position: absolute;
+  width: 974px;
+  height: 671px;
+  left: 491px;
+  top: 0px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.body__leftMenu {
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  width: 330px;
+  height: 634px;
+}
+
+.body__rightMenu {
+  position: absolute;
+  left: 1501px;
+  top: 0px;
+  width: 289px;
+}
+
+.topPanel {
+  position: absolute;
+  width: 1920px;
+  height: 107px;
+  left: 0px;
+  top: 0px;
+}
+
+.TopPanel__UpBar {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #adadab;
+  display: flex;
+}
+.margin_righ30 {
+  margin-right: 30px;
+}
+
+.bottomPanel {
+  position: absolute;
+  width: 1660px;
+  height: 331px;
+  left: 0px;
+  top: 967px;
+  padding: 61.5px 130px 27.5px 130px;
 }
