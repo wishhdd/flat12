@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="bottomPanel__footer">
       <div>
         <span>Copyright © 2021</span>
         <span>All Rights Reserved</span>
@@ -10,10 +10,10 @@ export default function Footer() {
           <a>Политика конфенденциальности</a>
         </span>
       </div>
-      <div className="footer_madeBy">
+      <div className="bottomPanel__footer_madeBy">
         Made by
         <svg
-          className="footer_flat12Log"
+          className="bottomPanel__footer_flat12Log"
           width="71"
           height="18"
           viewBox="0 0 71 18"

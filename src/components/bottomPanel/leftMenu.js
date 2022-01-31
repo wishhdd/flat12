@@ -1,6 +1,6 @@
 import React from "react";
 
-import white_privatka_logo_text from "..//../media/white_privatka_logo_text.png";
+import white_privatka_logo_text from "..//../media/white_privatka_logo_text.svg";
 
 export default function LeftMenu() {
   return (

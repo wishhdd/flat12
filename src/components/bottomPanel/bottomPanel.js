@@ -8,9 +8,11 @@ import Footer from "./footer";
 export default function BottomPanel() {
   return (
     <div className="bottomPanel">
-      <LeftMenu />
-      <Center />
-      <RightMenu />
+      <div className="bottomPanel_flex">
+        <LeftMenu />
+        <Center />
+        <RightMenu />
+      </div>
       <Footer />
     </div>
   );

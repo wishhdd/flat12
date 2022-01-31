@@ -6,15 +6,16 @@ export default function UpBar() {
   return (
     <div className="TopPanel__UpBar">
       <div className="TopPanel__UpBar_localLink">
+        <a>О НАС</a>
         <a>НОВОСТИ</a>
         <a>ОТЗЫВЫ</a>
+        <a>КОНТАКТЫ</a>
         <a>БЛОГ</a>
         <a>БАЗА ЗНАНИЙ</a>
         <a>ПРАВИЛА</a>
         <a>ОПЛАТА</a>
         <a>СИСТЕМА БАЛЛОВ</a>
         <a>FAQ</a>
-        <a>КОНТАКТЫ</a>
       </div>
       <div className="TopPanel__UpBar_link">
         <a>VKONTAKTE</a>

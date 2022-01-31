@@ -8,11 +8,15 @@ import Telegram from "..//../media/Telegram.png";
 
 export default function RightMenu() {
   return (
-    <div className="rightMenu">
-      <a href="tel:8(800)300-25-25">8 (800) 300–25–25</a>
-      <a href="mailto:privatka.club@gmail.com"> privatka.club@gmail.com</a>
+    <div className="bottomPanel__rightMenu">
+      <div>
+        <a href="tel:8(800)300-25-25">8 (800) 300–25–25</a>
+      </div>
+      <div>
+        <a href="mailto:privatka.club@gmail.com"> privatka.club@gmail.com</a>
+      </div>
 
-      <div className="rightMenu__contacts">
+      <div className="bottomPanel__rightMenu_contacts">
         <a href="https://wa.me/+78003002525" target="_blank">
           <img src={WhatsApp} alt="WhatsApp" />
         </a>

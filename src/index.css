@@ -14,7 +14,6 @@
 }
 
 body {
-  width: 99%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -31,167 +30,112 @@ a {
   cursor: pointer;
 }
 button {
+  border: none;
   cursor: pointer;
 }
-.body {
-  position: absolute;
-  width: calc(100% - 244px);
-  height: 780px;
-  left: 130px;
-  top: 147px;
+
+.TopPanel {
+  width: 86%;
 }
 
-.body__centre {
-  position: absolute;
-  width: calc(100% - 685px);
-  min-width: 830px;
-  height: 671px;
-  left: 361px;
-  top: 0px;
-  background: #ffffff;
-  border-radius: 20px;
-}
-
-.body__centre_grid {
-  display: grid;
-  grid-template-columns: 396px 396px;
-  grid-template-rows: 196px 102px 102px;
-  gap: 0px 0px;
-  grid-template-areas:
-    "callSign eMail"
-    "firstName birthdate"
-    "lastName city";
-}
-
-.body__centre_CallSign {
-  grid-area: callSign;
-}
-.body__centre_eMail {
-  grid-area: eMail;
-}
-.body__centre_firstName {
-  grid-area: firstName;
-}
-.body__centre_lastName {
-  grid-area: lastName;
-}
-.body__centre_birthdate {
-  grid-area: birthdate;
-}
-.body__centre_city {
-  grid-area: city;
-}
-
-.body__centre_backButton {
-  background: #e9e8e5;
-  border-radius: 50%;
-  margin-right: 19px;
-  margin-left: 36px;
-  width: 36px;
-  height: 36px;
-  border: none;
-}
-
-.body__centre_mainTitle {
+.TopPanel__UpBar {
+  padding-left: 7%;
+  padding-right: 7%;
   display: flex;
-  align-items: center;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 100%;
-  color: #383636;
-  margin-top: 32px;
+  justify-content: space-between;
 }
+.TopPanel__UpBar a {
+  white-space: nowrap;
+  margin-right: 30px;
 
-.body__centre_title {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  margin: 54px auto 36px 36px;
-  color: #383636;
-}
-
-.body__centre_inputBlock {
-  margin-left: 36px;
-}
-
-.body__centre_inputBlockTitle {
-  margin-bottom: 10px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
-  text-transform: uppercase;
-  color: #adadab;
-}
-
-.body__centre_input {
-  width: 358px;
-  outline: none;
-  border-bottom-style: solid;
-  border-bottom-color: #adadab;
-  border-bottom-width: 1px;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 165%;
-  padding-bottom: 3px;
-}
-.body__centre_input:hover {
-  border-bottom-width: 1px;
-  border-bottom-color: #383636;
-}
-.body__centre_callSignHistoryButton {
-  margin-top: 28px;
-  margin-bottom: 78px;
-  padding-top: 2px;
-  width: 204px;
-  height: 37px;
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 140%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #5b8388;
-  background: rgba(91, 131, 136, 0.1);
-  border-radius: 26px;
-  border: none;
+  color: #adadab;
 }
-.body__centre_callSignHistory_img {
-  padding-right: 13.44px;
+.TopPanel__UpBar_link {
+  display: flex;
+  align-items: center;
+}
+.TopPanel__UpBar_link a {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.TopPanel__MidBar {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  padding-left: 7%;
+  padding-right: 7%;
+  height: 74px;
+}
+.TopPanel__MidBar_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
 }
 
-.body__centre_saveButton {
-  margin-left: 36px;
-  border: none;
-  background: #e78346;
-  border-radius: 34px;
-  width: 157px;
-  height: 50px;
-  color: #ffffff;
+.TopPanel__MidBar_menu a {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 140%;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.TopPanel__MidBar_logo {
+  margin-right: 100px;
 }
 
+.TopPanel__MidBar_notification {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 110px;
+}
+.TopPanel__MidBar_notificationBell {
+  padding-top: 14px;
+}
+.TopPanel__MidBar_notificationBell Img {
+  height: 24px;
+  width: 24px;
+  float: left;
+}
+.TopPanel__MidBar_notificationQuantity {
+  background: #e78346;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding: 4px 2px;
+  text-align: center;
+
+  margin-left: -10px;
+  margin-top: -5px;
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+}
+.body {
+  width: 86%;
+  padding-left: 7%;
+  display: flex;
+  justify-content: flex-start;
+}
 .body__leftMenu {
   position: sticky;
   left: 0px;
   top: 0px;
-  width: 330px;
+  width: 21.7%;
+  max-width: 360px;
+  min-width: 260px;
   height: 634px;
 }
 
@@ -205,6 +149,10 @@ button {
 }
 .body__leftMenu_MenuText img {
   margin-right: 20px;
+}
+
+.body__leftMenu_ActionText {
+  color: #e78346;
 }
 
 .body__leftMenu_MenuItem {
@@ -222,27 +170,19 @@ button {
   font-size: 14px;
   line-height: 100%;
   padding: 5px 11px;
-  right: 40px;
+  right: 69px;
   background: #e78346;
   border-radius: 32px;
 }
-
-.body__leftMenu_ActionText {
-  color: #e78346;
-}
-
 .body__leftMenu_hr {
   border: 0;
   height: 1px;
   background-color: #e9e8e5;
-  width: 289px;
+  width: 87.88%;
+  max-width: 289px;
   margin-bottom: 32px;
   margin-left: 0;
 }
-.body__leftMenu_team {
-  margin-top: 31px;
-}
-
 .body__leftMenu_teamLogo {
   display: flex;
 }
@@ -277,10 +217,11 @@ button {
   line-height: 140%;
   background: #f0f0ee;
   border-radius: 20px;
-  width: 255px;
+  width: 78%;
+  min-width: 180px;
+  max-width: 255px;
   height: 130px;
 }
-
 .body__leftMenu_toClub {
   margin-top: 15px;
   padding-bottom: 4px;
@@ -304,11 +245,155 @@ button {
   border-bottom: 1px solid #adadab;
   width: 118px;
 }
+.body__leftMenu_toClub {
+  margin-top: 15px;
+  padding-bottom: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110%;
+  color: #b1b1ae;
+  border-bottom: 1px solid #adadab;
+  width: 156px;
+}
+
+.body__centre {
+  width: 74%;
+  height: 671px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 34px;
+  margin-bottom: 149px;
+}
+
+.body__centre_mainTitle {
+  display: flex;
+  align-items: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  color: #383636;
+  margin-top: 32px;
+}
+.body__centre_backButton {
+  background: #e9e8e5;
+  border-radius: 50%;
+  padding-top: 5px;
+  margin-right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+}
+
+.body__centre_title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  margin: 54px auto 36px 0px;
+  color: #383636;
+}
+.body__centre_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 196px 102px 102px;
+  grid-template-areas:
+    "callSign eMail"
+    "firstName birthdate"
+    "lastName city";
+}
+
+.body__centre_CallSign {
+  grid-area: callSign;
+}
+.body__centre_eMail {
+  grid-area: eMail;
+}
+.body__centre_firstName {
+  grid-area: firstName;
+}
+.body__centre_lastName {
+  grid-area: lastName;
+}
+.body__centre_birthdate {
+  grid-area: birthdate;
+}
+.body__centre_city {
+  grid-area: city;
+}
+.body__centre_inputBlockTitle {
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #adadab;
+}
+.body__centre_input {
+  width: 90%;
+  outline: none;
+  border-bottom-style: solid;
+  border-bottom-color: #adadab;
+  border-bottom-width: 1px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+  padding-bottom: 3px;
+}
+
+.body__centre_input:hover {
+  border-bottom-width: 1px;
+  border-bottom-color: #383636;
+}
+.body__centre_callSignHistoryButton {
+  margin-top: 28px;
+  margin-bottom: 78px;
+  padding-top: 2px;
+  width: 204px;
+  height: 37px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5b8388;
+  background: rgba(91, 131, 136, 0.1);
+  border-radius: 26px;
+  border: none;
+}
+.body__centre_callSignHistory_img {
+  padding-right: 13px;
+}
+.body__centre_saveButton {
+  margin-left: 36px;
+  border: none;
+  background: #e78346;
+  border-radius: 34px;
+  width: 157px;
+  height: 50px;
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
 
 .body__rightMenu {
-  position: absolute;
-  left: 1371px;
-  top: 0px;
+  margin-left: 36px;
   width: 289px;
 }
 .body__rightMenu_limitation {
@@ -321,7 +406,6 @@ button {
   color: #adadab;
   width: 192px;
 }
-
 .body__rightMenu_loadButton {
   background: #e78346;
   border-radius: 34px;
@@ -374,151 +458,50 @@ button {
   color: #383636;
 }
 
-.topPanel {
-  position: absolute;
-  width: calc(100% - 244px);
-  height: 107px;
-  padding-left: 130px;
-  top: 0px;
-}
-
-.TopPanel__UpBar {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 9px;
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 100%;
-  color: #adadab;
-}
-.TopPanel__UpBar a {
-  margin-right: 32px;
-}
-.TopPanel__UpBar_localLink {
-  display: flex;
-  align-items: center;
-}
-
-.TopPanel__UpBar_link {
-  display: flex;
-  align-items: center;
-}
-.TopPanel__UpBar_link a {
-  margin-left: 31px;
-  margin-right: 8px;
-}
-
-.TopPanel__MidBar {
-  font-size: 16px;
-  line-height: 140%;
-  color: #383636;
-  display: flex;
-  align-items: center;
-  height: 74px;
-  margin-top: 8px;
-}
-.TopPanel__MidBar_logo {
-  margin-right: 169px;
-}
-.TopPanel__MidBar_menu {
-  margin-right: 32px;
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-
-  color: #383636;
-}
-
-.TopPanel__MidBar_Chevron {
-  margin-left: -25px;
-  margin-right: 33px;
-}
-.TopPanel__MidBar_notification {
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-.TopPanel__MidBar_notificationImg {
-  margin-right: 24px;
-}
-
-.TopPanel__MidBar_notification div {
-  position: absolute;
-  left: 13px;
-  top: 5px;
-  padding: 3px 2px 0px 2px;
-  width: 16px;
-  height: 16px;
-
-  background: #e78346;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-
-  text-align: center;
-  vertical-align: middle;
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 100%;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #ffffff;
-}
-
 .bottomPanel {
-  position: absolute;
-  width: 1920px;
-  height: 358px;
-  left: 0;
-  top: 967px;
-  padding: 61.5px 0px 0 0px;
   background: #383636;
-  color: #ffffff;
+  padding-left: 7%;
+}
+.bottomPanel_flex {
+  width: 86%;
+  height: 393px;
+  display: flex;
+  justify-content: flex-start;
+}
+.bottomPanel__leftMenu {
+  padding-top: 62px;
+  width: 21.55%;
+}
+.bottomPanel__center {
+  padding-top: 62px;
+  width: 100%;
+  display: flex;
+}
+
+.bottomPanel__center li {
+  list-style-type: none;
+  padding-bottom: 26px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  color: #ffffff;
 }
 
-.bottomPanel__leftMenu {
-  position: absolute;
-  left: 130px;
-}
-.bottomPanel__leftMenu img {
-  height: 33px;
-}
-
-.bottomPanel__center {
-  position: absolute;
-  top: 44px;
-  left: 415px;
-  display: flex;
-}
-.bottomPanel__center li {
-  list-style-type: none;
-  padding-bottom: 26px;
-}
 .bottomPanel__center_ul_s {
-  width: 141px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 150px;
 }
 
 .bottomPanel__center_ul_m {
-  width: 170px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 180px;
 }
-
-.rightMenu {
-  position: absolute;
-  left: 1501px;
-  top: 52px;
+.bottomPanel__rightMenu {
+  padding-top: 62px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -526,9 +509,9 @@ button {
   line-height: 44px;
   letter-spacing: -1px;
   color: #ffffff;
-  width: 290px;
 }
-.rightMenu__contacts {
+.bottomPanel__rightMenu_contacts {
+  width: 289px;
   margin-top: 17px;
   border-top-color: rgb(243, 244, 246, 0.1);
   border-top-width: 2px;
@@ -536,17 +519,14 @@ button {
   display: flex;
   padding-top: 28px;
 }
-.rightMenu__contacts a {
+.bottomPanel__rightMenu_contacts a {
   margin-right: 18px;
 }
-.rightMenu__contacts a img {
+.bottomPanel__rightMenu_contacts a img {
   height: 43px;
 }
-
-.footer {
-  position: absolute;
-  left: 130px;
-  top: 348px;
+.bottomPanel__footer {
+  height: 48px;
   border-top-color: rgba(255, 255, 255, 0.1);
   border-top-width: 2px;
   border-top-style: solid;
@@ -557,19 +537,18 @@ button {
   line-height: 140%;
   color: rgba(255, 255, 255, 0.3);
   padding-top: 21px;
-  width: 86.5%;
+  width: 87.3%;
   display: flex;
   justify-content: space-between;
 }
-
-.footer span {
-  margin-right: 27px;
+.bottomPanel__footer span {
+  margin-right: 26px;
 }
-.footer span a {
+.bottomPanel__footer span a {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-.footer_madeBy {
+.bottomPanel__footer_madeBy {
   font-family: "Graphik LC TT";
   font-style: normal;
   font-weight: normal;
@@ -578,19 +557,131 @@ button {
   letter-spacing: -1px;
   font-feature-settings: "tnum" on, "lnum" on;
 }
-.footer_flat12Log {
+.bottomPanel__footer_flat12Log {
   margin-left: 5px;
   fill: rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width: 1475px) {
+@media (max-width: 1441px) {
+  .TopPanel__UpBar a {
+    font-size: 10px;
+  }
+  .TopPanel__MidBar_menu a {
+    font-size: 12px;
+  }
   .body__leftMenu {
     display: none;
   }
-  .body__centre {
-    left: 0px;
+  .bottomPanel__center li {
+    font-size: 14px;
+  }
+  .bottomPanel__rightMenu {
+    font-size: 18px;
+  }
+  .bottomPanel__rightMenu_contacts {
+    width: 218px;
+  }
+  .bottomPanel__rightMenu_contacts a {
+    margin-right: 10px;
+  }
+  .bottomPanel__rightMenu_contacts a img {
+    height: 35px;
+  }
+  .bottomPanel__footer {
+    font-size: 12px;
+  }
+  .bottomPanel__footer_madeBy {
+    font-size: 13px;
   }
 }
+@media (max-width: 1215px) {
+  .TopPanel__UpBar {
+    display: none;
+  }
+  .TopPanel__MidBar_menu a {
+    display: none;
+  }
+}
+@media (max-width: 1095px) {
+  .body {
+    display: inline;
+  }
 
-@media (min-width: 1440px) and (max-width: 1280px) {
+  .body__centre {
+    width: calc(100% - 136px);
+    height: 640px;
+    margin: 0px 48px 24px 48px;
+  }
+  .body__centre_mainTitle {
+    font-size: 22px;
+  }
+  .body__centre_title {
+    font-size: 14px;
+  }
+
+  .body__rightMenu {
+    width: calc(100% - 72px);
+    height: 128px;
+    margin: 0px 48px 92px 48px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body__rightMenu_flex {
+    display: flex;
+  }
+  .body__rightMenu_avatar {
+    height: 92px;
+    width: 92px;
+    margin: 0 32px;
+  }
+  .body__rightMenu_loadButton {
+    margin-right: 32px;
+  }
+
+  .body__rightMenu_infoScores {
+    position: absolute;
+    height: 44px;
+    border-radius: 20px;
+    top: 934px;
+    width: calc(100% - 72px);
+  }
+
+  .bottomPanel__leftMenu {
+    position: absolute;
+    padding-top: 38px;
+  }
+  .bottomPanel__center {
+    padding-top: 108px;
+  }
+  .bottomPanel__rightMenu {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .bottomPanel__rightMenu {
+    margin-left: -40px;
+  }
+  .bottomPanel__rightMenu_contacts {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 855px) {
+  .bottomPanel__center {
+    display: none;
+  }
+  .body__centre_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 196px 102px 102px 102px 102px 102px;
+    grid-template-areas:
+      "callSign"
+      "eMail"
+      "firstName "
+      "lastName "
+      "birthdate "
+      "city ";
+  }
 }

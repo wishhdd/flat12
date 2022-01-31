@@ -13,7 +13,6 @@ import Ellipse83 from "..//../media/Ellipse83.png";
 
 export default function LeftMenu() {
   const stateUser = useSelector(selectUser);
-  console.log(stateUser);
   return (
     <div className="body__leftMenu body__leftMenu_MenuText">
       <div className="body__leftMenu_MenuItem body__leftMenu_ActionText">
@@ -40,9 +39,8 @@ export default function LeftMenu() {
         <img src={rub} alt="Payment history" />
         История оплат
       </div>
-
+      <hr className="body__leftMenu_hr" />
       <div className="body__leftMenu_team">
-        <hr className="body__leftMenu_hr" />
         <div className="body__leftMenu_teamLogo">
           <img src={Ellipse83} alt="Team logo" />
           <div>
